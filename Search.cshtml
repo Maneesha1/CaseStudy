@@ -1,0 +1,82 @@
+﻿@model WebApplication6.model.Employ
+@{
+    Layout ="~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Search</title>
+</head>
+<body>
+    <h1>Employ</h1>
+    <table border="1">
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Dept</td>
+        </tr>
+        <tr>
+            <td>@Model.Id</td>
+            <td>@Model.Name</td>
+            <td>@Model.Email</td>
+            <td>@Model.dept</td>
+        </tr>
+
+        @*@{var emp2=ViewData["employ"]as WebApplication6.model.Employ;
+            }
+            <h1>Employ</h1>
+            <table border="1">
+                <tr>
+                    <td>Id</td>
+                    <td>Name</td>
+                    <td>Email</td>
+                    <td>Dept</td>
+                </tr>
+                <tr>
+                    <td>@emp2.Id</td>
+                    <td> @emp2.Name</td>
+                    <td> @emp2.Email</td>
+                    <td> @emp2.dept</td>
+                </tr>
+                <tr>
+                    <td>
+                        @ViewBag.employ.Id
+
+                    </td>
+                    <td>
+                    @ViewBag.employ.Name
+
+                    </td>
+                    <td>
+                    @ViewBag.employ.Email
+
+                    </td>
+                    <td>
+                    @ViewBag.employ.dept
+
+                    </td>
+                </tr>*@
+
+        @*<tr>*@
+
+        @*<td>@ViewData["id"]</td>*@   @*//razor syntax*@
+        @*<td>@ViewData["Name"]</td>
+                <td>@ViewData["Email"]</td>
+                <td>@ViewData["Dept"]</td>
+            </tr>*@
+        @*<tr>
+
+                <td>@ViewBag.id</td>   //razor syntax
+                <td>@ViewBag.name</td>
+                <td>@ViewBag.email</td>
+                <td>@ViewBag.dept</td>
+            </tr>*@
+
+        </table>
+</body>
+</html>
